@@ -1,11 +1,24 @@
 manifest:
   remotes:
-    - name: moergo-sc
-      url-base: https://github.com/moergo-sc
+    - name: yanshay
+      url-base: https://github.com/yanshay
   projects:
-    - name: zmk
-      remote: moergo-sc
-      revision: main
+    - name: urob-zmk
+      remote: yanshay
+      revision: yanshay_moergo_main_fixed
       import: app/west.yml
   self:
     path: config
+
+## Original
+# manifest:
+#   remotes:
+#     - name: moergo-sc
+#       url-base: https://github.com/moergo-sc
+#   projects:
+#     - name: zmk
+#       remote: moergo-sc
+#       revision: main
+#       import: app/west.yml
+#   self:
+#     path: config
