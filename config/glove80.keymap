@@ -1026,6 +1026,12 @@ ZMK_BEHAVIOR(sk_rshft_capswrd_td, tap_dance,
     bindings = <&skq RSHIFT>, <&caps_word>, <&kp K_CANCEL>;
 )
 
+ZMK_BEHAVIOR(sk_lshft_caps_esc, mod_morph,
+        bindings = <&sk_lshft_capswrd_td>, <&kp ESC>;
+        mods = <(MOD_RSFT)>; // On purpose only right shift
+        keep-mods = <0>;
+)
+
 / { behaviors {
     left_index_down: homey_left_index_down {
         compatible = "zmk,behavior-hold-tap";
@@ -1072,7 +1078,7 @@ ZMK_BEHAVIOR(sk_rshft_capswrd_td, tap_dance,
               &kp TAB               &kp Q               &kp W                &kp E                 &kp R   &kp T                                                                                           &kp Y                 &kp U                 &kp I                &kp O                   &kp P   &kp BSLH
               &kp ESC  &left_pinky LALT A  &left_ring1 LGUI S  &left_middy LSHFT D   &left_index LCTRL F   &kp G                                                                                           &kp H  &right_index LCTRL J  &right_middy RSHFT K  &right_ring1 RGUI L  &right_pinky RALT SEMI    &kp SQT
             &kp GRAVE               &kp Z               &kp X                &kp C  &left_index_down 3 V   &kp B    &kp ESC               &kp ESC  &mo_tog 3 3  &kp LGUI             &kp RCTRL   &kp RET   &kp N                 &kp M             &kp COMMA              &kp DOT                &kp FSLH  &kp PG_UP
- &magic LAYER_Magic 0            &kp HOME             &kp END             &kp LEFT             &kp RIGHT          &bspc_del  &sk_lshft_capswrd_td     &kp LALT  &kp RALT  &sk_rshft_capswrd_td  &spc_tab                      &kp DOWN                &kp UP             &kp LBKT                &kp RBKT  &kp PG_DN
+ &magic LAYER_Magic 0            &kp HOME             &kp END             &kp LEFT             &kp RIGHT          &bspc_del  &sk_lshft_caps_esc     &kp LALT  &kp RALT  &sk_rshft_capswrd_td  &spc_tab                      &kp DOWN                &kp UP             &kp LBKT                &kp RBKT  &kp PG_DN
             >;
         };
 
