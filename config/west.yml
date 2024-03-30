@@ -5,6 +5,7 @@ manifest:
   projects:
     - name: urob-zmk
       remote: yanshay
+      path: zmk
       revision: yanshay_moergo_main_fixed
       import: app/west.yml
   self:
