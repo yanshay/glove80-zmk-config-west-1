@@ -1034,7 +1034,6 @@ ZMK_BEHAVIOR(sk_rshft_capswrd_td, tap_dance,
 ZMK_BEHAVIOR(sk_rshft_capswrd_right, mod_morph,
         bindings = <&sk_rshft_capswrd_td>, <&kp RIGHT>;
         mods = <(MOD_LSFT)>; // On purpose only left shift
-        keep-mods = <0>;
 )
 
 / { behaviors {
