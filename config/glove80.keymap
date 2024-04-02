@@ -1021,15 +1021,20 @@ ZMK_BEHAVIOR(sk_lshft_capswrd_td, tap_dance,
     tapping-term-ms = <250>;
     bindings = <&skq LSHIFT>, <&caps_word>, <&kp K_CANCEL>;
 )
+ZMK_BEHAVIOR(sk_lshft_capswrd_esc, mod_morph,
+        bindings = <&sk_lshft_capswrd_td>, <&kp ESC>;
+        mods = <(MOD_RSFT)>; // On purpose only right shift
+        keep-mods = <0>;
+
 ZMK_BEHAVIOR(sk_rshft_capswrd_td, tap_dance,
     tapping-term-ms = <250>;
     bindings = <&skq RSHIFT>, <&caps_word>, <&kp K_CANCEL>;
 )
-
-ZMK_BEHAVIOR(sk_lshft_caps_esc, mod_morph,
-        bindings = <&sk_lshft_capswrd_td>, <&kp ESC>;
-        mods = <(MOD_RSFT)>; // On purpose only right shift
+ZMK_BEHAVIOR(sk_rshft_capswrd_right, mod_morph,
+        bindings = <&sk_rshft_capswrd_td>, <&kp RIGHT>;
+        mods = <(MOD_LSFT)>; // On purpose only right shift
         keep-mods = <0>;
+
 )
 
 / { behaviors {
@@ -1077,8 +1082,8 @@ ZMK_BEHAVIOR(sk_lshft_caps_esc, mod_morph,
             &kp EQUAL              &kp N1              &kp N2               &kp N3                &kp N4  &kp N5                                                                                          &kp N6                &kp N7                &kp N8               &kp N9                  &kp N0  &kp MINUS
               &kp TAB               &kp Q               &kp W                &kp E                 &kp R   &kp T                                                                                           &kp Y                 &kp U                 &kp I                &kp O                   &kp P   &kp BSLH
               &kp ESC  &left_pinky LALT A  &left_ring1 LGUI S  &left_middy LSHFT D   &left_index LCTRL F   &kp G                                                                                           &kp H  &right_index LCTRL J  &right_middy RSHFT K  &right_ring1 RGUI L  &right_pinky RALT SEMI    &kp SQT
-            &kp GRAVE               &kp Z               &kp X                &kp C                 &kp V   &kp B  &left_index_down 3 ESC            &kp ESC  &mo_tog 3 3  &kp LGUI             &kp RCTRL   &kp RET   &kp N                 &kp M             &kp COMMA              &kp DOT                &kp FSLH  &kp PG_UP
- &magic LAYER_Magic 0            &kp HOME             &kp END             &kp LEFT             &kp RIGHT          &bspc_del  &sk_lshft_caps_esc     &kp LALT  &kp RALT  &sk_rshft_capswrd_td  &spc_tab                      &kp DOWN                &kp UP             &kp LBKT                &kp RBKT  &kp PG_DN
+            &kp GRAVE               &kp Z               &kp X                &kp C                 &kp V   &kp B  &left_index_down 3 ESC            &kp ESC  &mo_tog 3 3  &kp LGUI               &kp RCTRL   &kp RET   &kp N                 &kp M             &kp COMMA              &kp DOT                &kp FSLH  &kp PG_UP
+ &magic LAYER_Magic 0            &kp HOME             &kp END             &kp LEFT             &kp RIGHT          &bspc_del  &sk_lshft_capswrd_esc  &kp LALT  &kp RALT    &sk_rshft_capswrd_right  &spc_tab                      &kp DOWN                &kp UP             &kp LBKT                &kp RBKT  &kp PG_DN
             >;
         };
 
