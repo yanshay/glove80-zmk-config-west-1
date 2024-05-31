@@ -3,7 +3,8 @@ manifest:
     - name: yanshay
       url-base: https://github.com/yanshay
   projects:
-    - name: urob-zmk
+    # - name: urob-zmk
+    - name: urob-zmk-gh-import-clone-24-05-31 
       remote: yanshay
       path: zmk
       revision: yanshay_moergo_main_fixed
