@@ -8,7 +8,8 @@ manifest:
     - name: zmk
       remote: yanshay
       path: zmk
-      revision: yanshay_moergo_main_fixed
+      # revision: yanshay_moergo_main_fixed
+      revision: main
       import: app/west.yml
   self:
     path: config
