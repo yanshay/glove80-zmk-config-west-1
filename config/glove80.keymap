@@ -744,12 +744,12 @@ ZMK_BEHAVIOR(hml_ml, hold_tap,
 
         layer_Numbers {
             bindings = <
-  &none   &none   &none   &none   &none                                                                      &none      &none    &none   &none   &none
-  &none   &none   &none   &none   &none   &none                                                   &kp FSLH   &none      &none    &none   &none   &none
-  &none   &none   &none   &none   &none   &none                                                   &kp STAR  &kp N7     &kp N8   &kp N9   &none   &none
-  &none   &none   &none   &none   &none   &none                                                  &kp MINUS  &kp N4     &kp N5   &kp N6   &none   &none
-  &none   &none   &none   &none   &none   &none   &none   &none   &none   &none   &none  &trans   &kp PLUS  &kp N1     &kp N2   &kp N3   &none   &none
-  &none   &none   &none   &none   &none           &none   &none   &none   &none   &none  &trans              &none  &kp COMMA  &kp DOT   &none   &none
+  &none   &none   &none   &none   &none                                                                      &none      &none    &none     &none   &none
+  &none   &none   &none   &none   &none   &none                                                      &none   &none      &none    &none     &none   &none
+  &none   &none   &none   &none   &none   &none                                                      &none  &kp N7     &kp N8   &kp N9     &none   &none
+  &none   &none   &none   &none   &none   &none                                                   &kp PLUS  &kp N4     &kp N5   &kp N6  &kp STAR   &none
+  &none   &none   &none   &none   &none   &none   &none   &none   &none   &none   &none  &trans  &kp MINUS  &kp N1     &kp N2   &kp N3  &kp FSLH   &none
+  &none   &none   &none   &none   &none           &none   &none   &none   &none   &none  &trans              &none  &kp COMMA  &kp DOT     &none   &none
             >;
         };
 
