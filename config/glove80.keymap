@@ -727,7 +727,7 @@ ZMK_BEHAVIOR(hml_ml, hold_tap,
               &kp TAB          &kp Q        &kp W         &kp E                       &kp R   &kp T                                                                                        &kp Y         &kp U         &kp I        &kp O           &kp P   &kp BSLH
               &kp ESC  &hmlnp LALT A  &hml LGUI S  &hml LSHFT D                &hml LCTRL F   &kp G                                                                                        &kp H  &hmr LCTRL J  &hmr RSHFT K  &hmr RGUI L  &hmr RALT SEMI    &kp SQT
             &kp GRAVE          &kp Z        &kp X         &kp C  &hml_ml LAYER_Navigation V   &kp B    &kp ESC                  &none  &lower   &none                    &none   &kp RET   &kp N         &kp M     &kp COMMA      &kp DOT        &kp FSLH  &kp PG_UP
- &magic LAYER_Magic 0       &kp HOME      &kp END      &kp LEFT                   &kp RIGHT          &bspc_del  &sk_lshft_capswrd_esc   &none   &none  &sk_rshft_capswrd_right  &spc_tab                &kp UP      &kp DOWN     &kp LBKT        &kp RBKT  &kp PG_DN
+ &magic LAYER_Magic 0       &kp HOME      &kp END      &kp LEFT                   &kp RIGHT          &bspc_del  &sk_lshft_capswrd_esc   &mo 2   &none  &sk_rshft_capswrd_right  &spc_tab              &kp DOWN        &kp UP     &kp LBKT        &kp RBKT  &kp PG_DN
             >;
         };
 
@@ -744,12 +744,12 @@ ZMK_BEHAVIOR(hml_ml, hold_tap,
 
         layer_Numbers {
             bindings = <
-  &none   &none   &none   &none   &none                                                                   &none   &none   &none   &none   &none
-  &none   &none   &none   &none   &none   &none                                                   &none   &none   &none   &none   &none   &none
-  &none   &none   &none   &none   &none   &none                                                   &none   &none   &none   &none   &none   &none
-  &none   &none   &none   &none   &none   &none                                                   &none   &none   &none   &none   &none   &none
-  &none   &none   &none   &none   &none   &none   &none   &none   &none   &none   &none   &none   &none   &none   &none   &none   &none   &none
-  &none   &none   &none   &none   &none           &none   &none   &none   &none   &none   &none           &none   &none   &none   &none   &none
+  &none   &none   &none   &none   &none                                                                      &none      &none    &none   &none   &none
+  &none   &none   &none   &none   &none   &none                                                   &kp FSLH   &none      &none    &none   &none   &none
+  &none   &none   &none   &none   &none   &none                                                   &kp STAR  &kp N7     &kp N8   &kp N9   &none   &none
+  &none   &none   &none   &none   &none   &none                                                  &kp MINUS  &kp N4     &kp N5   &kp N6   &none   &none
+  &none   &none   &none   &none   &none   &none   &none   &none   &none   &none   &none  &trans   &kp PLUS  &kp N1     &kp N2   &kp N3   &none   &none
+  &none   &none   &none   &none   &none           &none   &none   &none   &none   &none  &trans              &none  &kp COMMA  &kp DOT   &none   &none
             >;
         };
 
